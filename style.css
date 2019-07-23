@@ -1,0 +1,386 @@
+.info{
+    background: #EDEDF4;
+}
+body{
+    color: #EDEDF4;
+    background: url(images/pizza5.jpg) center/cover fixed no-repeat;
+}
+.primary-color{
+    color: #150578;
+}
+.info h2{
+    font-family: 'Damion', cursive;
+    word-spacing: 0.6rem;
+}
+.info a{
+    transition: color 2s ease-in-out;
+}
+.info a:hover{
+    color: #A51C30;
+}
+/*header*/
+#header{
+    min-height: calc(100vh - 94px);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(images/pizza1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90{
+    min-height: calc(100vh - 94px);
+}
+.banner h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    border-top: 6px dotted #EDEDF4;
+    border-bottom: 6px dotted #EDEDF4;
+    animation: fromLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromLeft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.main-btn{
+    font-family: 'Damion', cursive;
+    color: #C20114;
+    font-size: 2rem;
+    border: 2px solid #C20114;
+}
+.main-btn:hover{
+    color: #150578;
+    border: 2px solid #EDEDF4;
+    background: #EDEDF4;
+}
+.pizza-btn{
+    animation: fromRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes fromRight{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-30px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.header-link{
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    background: #EDEDF4;
+    border-radius: 10px;
+    transition: all 2s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.header-link:hover{
+    color: #C20114;
+}
+@keyframes fromBottom{
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+.navbar{
+    background: #EDEDF4;
+    padding: 20px 20px;
+    transition: all 1s ease;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand{
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+    transition: all 1s ease;
+}
+.navbar-brand:hover{
+    color: #C20114;
+}
+.nav-link{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #C20114;
+    text-decoration: none;
+    transition: all 2s ease;
+    font-size: 23px;
+}
+.nav-link:hover{
+    color: #150578;
+}
+.nav-btn{
+    font-family: 'Damion', cursive;
+    background: transparent;
+    color: #150578;
+    border: 2px solid #150578;
+    font-size: 23px;
+    transition: all 2s ease;
+}
+.nav-btn:hover{
+    color: #C20114;
+    border: 2px solid #C20114;
+    transform: rotate(10deg);
+}
+.toggler-btn{
+    border: 2px solid #150578;
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #150578;
+    transition: all 0.5s ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar1{
+    transform: rotate(45deg) translate(-5px,-8px);
+}
+/*menu-items*/
+.item-container{
+    position: relative;
+/*for-the-link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgba(0,0,0));
+    transition: all 2s ease;
+}
+.item-img{
+    transition: all 2s ease;
+}
+.item-container:hover .item-img{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+.item-link{
+    font-family: 'Damion', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #150578;
+    font-size: 2rem;
+    border-top: 3px solid #150578;
+    border-bottom: 3px solid #150578;
+    transition: all 2s ease;
+    opacity: 0;
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+.item-link:hover{
+    color: #EDEDF4;
+    border: 3px solid #EDEDF4;
+    background: #EDEDF4;
+    color: #C20114;
+}
+.item-container:hover{
+    outline: 10px solid #150578;
+    outline-offset: -1.8rem;
+}
+#menu{
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)), url(images/pizza1.jpg)center/cover fixed no-repeat;
+}
+.special{
+    border: 3px solid #150578;
+    position: relative;
+}
+.special-text{
+    font-family: 'Damion', cursive;
+    position: absolute;
+    top: 0;
+    right: 10%;
+    background: #150578;
+    padding: 0 0.4rem;
+}
+.fresh h1{
+    font-family: 'Damion', cursive;
+}
+.single-item-price h1{
+    font-family: 'Damion', cursive;
+}
+.single-item-text h4{
+    font-family: 'Damion', cursive;
+}
+.single-item-text h2{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.about h1{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.about h2{
+    font-family: 'Damion', cursive;
+}
+.about-pictures{
+    position: relative;
+}
+.about-image{
+    position: absolute;
+    width: 150px;
+    transition: all 2s ease;
+    opacity: 0.9;
+}
+.img-1{
+    left: 0%;
+    top: 5%;
+}
+.img-2{
+    left: 20%;
+    top: 20%;
+    z-index: 10;
+}
+.img-3{
+    left: 40%;
+    top: 35%;
+    z-index: 20;
+}
+.img-4{
+    left: 40%;
+    top: 5%;
+}
+.img-5{
+    left: 0%;
+    top: 36%;
+}
+.about-image:hover{
+    outline: 10px solid #150578;
+    outline-offset: 0.8rem;
+    transform: scale(1.3) rotate(20deg);
+    z-index: 30;
+    opacity: 1;
+}
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
+.review-item{
+    background: rgba(255,255,255,0.7);
+    clip-path: polygon(0 0,100% 0,90% 100%,0 100%);
+}
+.review-img{
+    width: 150px;
+}
+.review-text h2{
+    font-family: 'Damion', cursive;
+}
+.review-text p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.card-title h1{
+    font-family: 'Damion', cursive;
+    color: #C20114;
+}
+.role h4{
+    font-family: 'Damion', cursive;
+}
+.team-icons a{
+    transition: all 2s ease-in-out;
+}
+.team-icons a:hover{
+    transform: translateY(-5px);
+}
+.fa-facebook-f{
+    color: #3B5998;
+}
+.fa-instagram{
+    color: #3F729B;
+}
+.fa-twitter{
+    color: #1DA1F2;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+.fa-facebook-f:hover{
+    color: #C20114;
+}
+.fa-instagram:hover{
+    color: #C20114;
+}
+.fa-twitter:hover{
+    color: #C20114;
+}
+.fa-whatsapp:hover{
+    color: #C20114;
+}
+.height-60{
+    min-height: 60vh;
+}
+#contact .card{
+    background: rgba(0,0,0,0.5);
+}
+#contact .card:hover{
+    background: rgba(0,0,0,0.8);
+}
+#contact .card-header{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #61C9A8;
+}
+#contact .input-group-text{
+    background: #61C9A8;
+    border-color: #61C9A8;
+    color: #FFEEDB;
+}
+#contact .card input{
+    color: #D4B483;
+}
+#contact .card input::placeholder{
+    font-family: 'Damion', cursive;
+    color: #D4B483;
+}
+.contact-btn{
+    font-family: 'Damion', cursive;
+    color: #61C9A8;
+    border-color: #61C9A8;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+.contact-btn:hover{
+    color: #FFEEDB;
+    border-color: #FFEEDB;
+    background: #61C9A8;
+}
+#back-to-top{
+    background: #EDEDF4;
+    border-radius: 10px;
+    display: inline-block;
+    color: #150578
+}
+.scrollTop{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
